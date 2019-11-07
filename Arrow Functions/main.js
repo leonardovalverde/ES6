@@ -7,14 +7,20 @@ console.log(newMap);
 const usuario = { nome: 'Diego', idade: 23 };
 const mostraIdade = () => usuario.idade;
 
-
 console.log(mostraIdade());
 
 const nome = "Diego";
 const idade = 23;
-function mostraUsuario(nome = 'Diego', idade = 18) {
+const mostraUsuario = (nome = 'Diego', idade = 18) => {
 return { nome, idade };
 }
 mostraUsuario(nome, idade);
 
-console.log()
+console.log(mostraUsuario());
+
+const promise = () => {
+    return new Promise((resolve, reject) => {
+    return resolve();
+    })
+   }
+
